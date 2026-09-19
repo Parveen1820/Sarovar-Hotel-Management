@@ -1,0 +1,102 @@
+/* Mobile Responsive Overrides */
+@media screen and (max-width: 768px) {
+  /* Layout */
+  .app-layout {
+    flex-direction: column !important;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    width: 100% !important;
+    height: auto !important;
+    position: sticky !important;
+    top: 0;
+    z-index: 1000;
+    padding: 10px !important;
+    flex-direction: row !important;
+    overflow-x: auto !important;
+    white-space: nowrap !important;
+  }
+  
+  .sidebar-brand, .sidebar-bottom, .sidebar-heading {
+    display: none !important;
+  }
+
+  .sidebar-section {
+    display: inline-flex !important;
+    margin-bottom: 0 !important;
+  }
+
+  .sidebar-section nav {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 10px;
+  }
+
+  .sidebar-item {
+    margin-bottom: 0 !important;
+    padding: 8px 12px !important;
+    border-radius: 20px !important;
+  }
+
+  /* Main Content */
+  .main-content {
+    width: 100% !important;
+    height: auto !important;
+    overflow-y: visible !important;
+  }
+
+  /* Topbar */
+  .topbar {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    height: auto !important;
+    gap: 15px !important;
+    padding: 15px !important;
+  }
+  .topbar-right {
+    width: 100% !important;
+    justify-content: space-between !important;
+  }
+
+  /* Functional Pages */
+  .func-stats-row {
+    flex-direction: column !important;
+  }
+
+  .func-page-header {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+    gap: 15px !important;
+  }
+
+  .func-header-actions {
+    flex-wrap: wrap !important;
+    width: 100% !important;
+  }
+  
+  .func-header-actions button {
+    flex: 1 1 auto;
+  }
+
+  .func-table-wrapper, .table-wrapper {
+    overflow-x: auto !important;
+  }
+
+  /* Modals */
+  .func-modal {
+    width: 95% !important;
+    padding: 15px !important;
+    max-height: 90vh !important;
+    overflow-y: auto !important;
+  }
+
+  .func-form-row {
+    flex-direction: column !important;
+    gap: 0 !important;
+  }
+
+  .func-form-field {
+    width: 100% !important;
+  }
+}

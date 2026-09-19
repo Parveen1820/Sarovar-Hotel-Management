@@ -1,0 +1,121 @@
+.functional-container {
+    padding: 24px;
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+.table-wrapper {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    border: 1px solid #e2e8f0;
+}
+
+.data-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+.data-table th, .data-table td {
+    padding: 16px 20px;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.data-table th {
+    background: #f8fafc;
+    font-weight: 600;
+    color: #475569;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.data-table td {
+    color: #1e293b;
+    font-size: 14px;
+}
+
+.data-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+.badge {
+    padding: 4px 10px;
+    border-radius: 9999px;
+    font-size: 12px;
+    font-weight: 600;
+    display: inline-block;
+}
+
+.badge.status {
+    background: #eff6ff;
+    color: #1d4ed8;
+}
+
+.priority-high, .priority-critical {
+    background: #fef2f2;
+    color: #b91c1c;
+}
+
+.priority-medium {
+    background: #fef9c3;
+    color: #a16207;
+}
+
+.priority-low {
+    background: #f0fdf4;
+    color: #15803d;
+}
+
+.data-table button {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 13px;
+    transition: background 0.2s;
+}
+
+.data-table button:hover {
+    background: #2563eb;
+}
+
+/* MAINTENANCE AND FUNCTIONAL PAGES OVERRIDES */
+.functional-page { padding: 24px; animation: fadeIn 0.3s ease-in-out; }
+.func-page-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 25px; }
+.func-page-header h2 { font-size: 24px; margin: 5px 0; }
+.func-header-actions { display: flex; gap: 10px; align-items: center; }
+.func-tab { background: transparent; border: 1px solid #ddd; padding: 8px 15px; border-radius: 6px; cursor: pointer; }
+.func-tab.active { background: #3b82f6; color: white; border-color: #3b82f6; }
+.func-add-btn { background: #0f172a; color: white; padding: 8px 15px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold; }
+.func-stats-row { display: flex; gap: 15px; margin-bottom: 25px; }
+.func-stat-card { background: white; padding: 15px; border-radius: 8px; border: 1px solid #ddd; display: flex; align-items: center; gap: 15px; flex: 1; }
+.func-stat-icon { font-size: 24px; }
+.func-stat-card strong { display: block; font-size: 24px; }
+.func-stat-card small { color: #666; font-size: 13px; }
+.func-table-wrapper { background: white; border-radius: 8px; border: 1px solid #ddd; overflow: hidden; }
+.func-table-wrapper table { width: 100%; border-collapse: collapse; text-align: left; }
+.func-table-wrapper th, .func-table-wrapper td { padding: 15px; border-bottom: 1px solid #ddd; }
+.func-table-wrapper th { background: #f8fafc; font-weight: 600; font-size: 13px; color: #475569; }
+.func-badge { padding: 5px 10px; border-radius: 12px; font-size: 12px; font-weight: 600; }
+.badge-red { background: #fee2e2; color: #b91c1c; }
+.badge-orange { background: #ffedd5; color: #c2410c; }
+.badge-blue { background: #eff6ff; color: #1d4ed8; }
+.badge-gray { background: #f1f5f9; color: #475569; }
+.badge-green { background: #dcfce7; color: #15803d; }
+.func-action-btn { background: #3b82f6; color: white; border: none; padding: 8px 12px; border-radius: 6px; cursor: pointer; }
+.func-modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0,0,0,0.6); display: flex; justify-content: center; align-items: center; z-index: 1000; }
+.func-modal { background: white; padding: 25px; border-radius: 10px; width: 500px; max-width: 90%; }
+.func-modal-header { display: flex; justify-content: space-between; margin-bottom: 20px; }
+.func-modal-close { background: none; border: none; font-size: 24px; cursor: pointer; }
+.func-form-row { display: flex; gap: 15px; }
+.func-form-row > * { flex: 1; }
+.func-form-field { margin-bottom: 15px; }
+.func-form-field label { display: block; margin-bottom: 5px; font-weight: bold; font-size: 14px; }
+.func-form-field input, .func-form-field select, .func-form-field textarea { width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; }
+.func-modal-footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
+.secondary-button { background: #f1f5f9; color: #333; border: 1px solid #ddd; padding: 10px 15px; border-radius: 6px; cursor: pointer; }
