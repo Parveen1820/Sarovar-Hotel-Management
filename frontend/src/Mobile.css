@@ -1,5 +1,10 @@
 /* Mobile Responsive Overrides */
 @media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   /* Layout */
   .app-layout {
     flex-direction: column !important;
@@ -8,11 +13,12 @@
   /* Sidebar */
   .sidebar {
     width: 100% !important;
+    min-height: 0 !important;
     height: auto !important;
     position: sticky !important;
     top: 0;
     z-index: 1000;
-    padding: 10px !important;
+    padding: 8px 10px !important;
     flex-direction: row !important;
     overflow-x: auto !important;
     white-space: nowrap !important;
@@ -30,20 +36,27 @@
   .sidebar-section nav {
     display: flex !important;
     flex-direction: row !important;
-    gap: 10px;
+    gap: 6px;
   }
 
   .sidebar-item {
+    width: auto !important;
     margin-bottom: 0 !important;
-    padding: 8px 12px !important;
-    border-radius: 20px !important;
+    padding: 8px 10px !important;
+    border-radius: 7px !important;
+    flex: 0 0 auto !important;
   }
 
   /* Main Content */
   .main-content {
+    margin-left: 0 !important;
     width: 100% !important;
     height: auto !important;
     overflow-y: visible !important;
+  }
+
+  .page-content {
+    padding: 16px !important;
   }
 
   /* Topbar */
@@ -57,6 +70,27 @@
   .topbar-right {
     width: 100% !important;
     justify-content: space-between !important;
+  }
+
+  .dashboard-welcome,
+  .module-header,
+  .func-page-header {
+    align-items: flex-start !important;
+  }
+
+  .dashboard-welcome .primary-button,
+  .func-header-actions button {
+    width: 100%;
+  }
+
+  .stats-grid,
+  .room-summary,
+  .room-status-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+  }
+
+  .dashboard-grid {
+    grid-template-columns: minmax(0, 1fr) !important;
   }
 
   /* Functional Pages */
@@ -79,8 +113,19 @@
     flex: 1 1 auto;
   }
 
+  .functional-page,
+  .functional-container {
+    padding: 16px !important;
+  }
+
   .func-table-wrapper, .table-wrapper {
     overflow-x: auto !important;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .func-table-wrapper table,
+  .table-wrapper table {
+    min-width: 620px;
   }
 
   /* Modals */
@@ -98,5 +143,26 @@
 
   .func-form-field {
     width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .topbar {
+    padding: 12px 16px !important;
+  }
+
+  .topbar h1 {
+    font-size: 18px;
+  }
+
+  .stats-grid,
+  .room-summary,
+  .room-status-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .module-header h2,
+  .func-page-header h2 {
+    font-size: 21px;
   }
 }
