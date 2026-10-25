@@ -1,4 +1,4 @@
-# Sarovar SmartStay
+# Sarovar SmartStay hotel
 
 **Intelligent Hotel Management System**
 *Hotel: Sarovar Hotel, Boisar, Maharashtra, India*
