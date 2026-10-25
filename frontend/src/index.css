@@ -408,7 +408,7 @@ textarea {
 }
 
 .sidebar-brand p {
-  font-size: 8px;
+  font-size: 11px;
   color: #d6ad60;
   letter-spacing: 2px;
   margin-top: 3px;
@@ -419,12 +419,13 @@ textarea {
 }
 
 .sidebar-heading {
-  font-size: 9px;
+  font-size: 11px;
   letter-spacing: 1.5px;
-  color: #69758a;
-  font-weight: bold;
+  color: #94a3b8;
+  font-weight: 700;
   padding: 0 12px;
   margin-bottom: 8px;
+  text-transform: uppercase;
 }
 
 .sidebar-item {
@@ -438,7 +439,7 @@ textarea {
   align-items: center;
   gap: 12px;
   padding: 0 12px;
-  font-size: 12px;
+  font-size: 14px;
   cursor: pointer;
   margin-bottom: 3px;
   text-align: left;
@@ -539,9 +540,10 @@ textarea {
 }
 
 .breadcrumb {
-  font-size: 9px;
-  color: #9aa2af;
+  font-size: 13px;
+  color: #64748b;
   margin-bottom: 4px;
+  font-weight: 500;
 }
 
 .topbar h1 {
@@ -601,13 +603,14 @@ textarea {
 
 .user-info strong {
   display: block;
-  font-size: 11px;
-  color: #263143;
+  font-size: 13px;
+  color: #1e293b;
+  font-weight: 600;
 }
 
 .user-info span {
-  font-size: 9px;
-  color: #8d96a5;
+  font-size: 12px;
+  color: #64748b;
 }
 
 .profile-arrow {
@@ -695,8 +698,9 @@ textarea {
 }
 
 .stat-trend {
-  font-size: 9px;
-  padding: 4px 6px;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 4px 8px;
   border-radius: 4px;
   background: #ecfdf3;
   color: #16834a;
@@ -715,15 +719,15 @@ textarea {
 }
 
 .stat-title {
-  font-size: 11px;
-  font-weight: bold;
-  color: #4b5563;
-  margin-top: 3px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  margin-top: 4px;
 }
 
 .stat-subtitle {
-  font-size: 9px;
-  color: #9aa1ad;
+  font-size: 12px;
+  color: #64748b;
   margin-top: 5px;
 }
 
@@ -751,13 +755,14 @@ textarea {
 }
 
 .panel-header h3 {
-  font-size: 14px;
-  color: #202b3d;
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
 }
 
 .panel-header p {
-  font-size: 9px;
-  color: #9aa1ad;
+  font-size: 13px;
+  color: #64748b;
   margin-top: 4px;
 }
 
@@ -765,7 +770,7 @@ textarea {
   background: none;
   border: none;
   color: #a47d38;
-  font-size: 10px;
+  font-size: 13px;
   font-weight: bold;
   cursor: pointer;
 }
@@ -804,15 +809,16 @@ textarea {
 }
 
 .room-type {
-  font-size: 8px;
-  color: #8d96a5;
+  font-size: 12px;
+  color: #64748b;
   margin-top: 3px;
 }
 
 .room-guest {
-  font-size: 9px;
-  color: #596477;
-  margin-top: 12px;
+  font-size: 13px;
+  color: #334155;
+  font-weight: 500;
+  margin-top: 10px;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -821,9 +827,9 @@ textarea {
 .room-status-label {
   display: flex;
   align-items: center;
-  gap: 5px;
-  font-size: 8px;
-  color: #7d8795;
+  gap: 6px;
+  font-size: 12px;
+  color: #64748b;
   margin-top: 9px;
 }
 
@@ -965,18 +971,20 @@ table {
 
 th {
   text-align: left;
-  color: #9ba3af;
-  font-size: 8px;
+  color: #475569;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
   letter-spacing: 0.5px;
-  padding: 10px 8px;
+  padding: 12px 10px;
   border-bottom: 1px solid #edf0f3;
 }
 
 td {
-  padding: 13px 8px;
+  padding: 13px 10px;
   border-bottom: 1px solid #f0f2f5;
-  color: #606b7b;
-  font-size: 10px;
+  color: #334155;
+  font-size: 14px;
 }
 
 .guest-cell {
@@ -986,8 +994,9 @@ td {
 }
 
 .guest-cell strong {
-  color: #374151;
-  font-size: 10px;
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .guest-avatar {
@@ -1004,10 +1013,10 @@ td {
 }
 
 .status-pill {
-  padding: 5px 8px;
+  padding: 5px 10px;
   border-radius: 20px;
-  font-size: 8px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .status-pill.checked {
@@ -1157,8 +1166,8 @@ td {
 }
 
 .module-header p:last-child {
-  color: #8a94a3;
-  font-size: 11px;
+  color: #64748b;
+  font-size: 14px;
   margin-top: 5px;
 }
 
@@ -1183,13 +1192,14 @@ td {
 }
 
 .room-summary-card span:last-child {
-  color: #7f8998;
-  font-size: 9px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
 }
 
 .summary-number {
   color: #1c2637;
-  font-size: 22px;
+  font-size: 26px;
   font-weight: bold;
 }
 
@@ -1230,16 +1240,18 @@ td {
 .room-filter {
   background: transparent;
   border: none;
-  padding: 8px 10px;
+  padding: 8px 14px;
   border-radius: 6px;
-  color: #7d8795;
-  font-size: 9px;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 500;
   cursor: pointer;
 }
 
 .room-filter span {
-  margin-left: 5px;
-  color: #a5acb6;
+  margin-left: 6px;
+  color: #94a3b8;
+  font-size: 12px;
 }
 
 .room-filter.active {
@@ -1264,15 +1276,16 @@ td {
 }
 
 .room-search span {
-  color: #9ba3ae;
+  color: #94a3b8;
+  font-size: 16px;
 }
 
 .room-search input {
   width: 100%;
   border: none;
   outline: none;
-  font-size: 9px;
-  color: #374151;
+  font-size: 13px;
+  color: #1e293b;
 }
 
 /* ROOM GRID */
@@ -1322,16 +1335,17 @@ td {
 }
 
 .room-card-number {
-  font-size: 20px;
+  font-size: 22px;
   font-weight: bold;
   color: #182235;
 }
 
 .room-card-status {
-  font-size: 7px;
-  font-weight: bold;
-  padding: 5px 7px;
+  font-size: 11px;
+  font-weight: 600;
+  padding: 4px 10px;
   border-radius: 20px;
+  text-transform: capitalize;
 }
 
 .room-card-status.available {
@@ -1355,9 +1369,10 @@ td {
 }
 
 .room-card-type {
-  font-size: 9px;
-  color: #737e8e;
-  margin-top: 4px;
+  font-size: 13px;
+  font-weight: 500;
+  color: #64748b;
+  margin-top: 5px;
 }
 
 .room-card-info {
@@ -1376,13 +1391,17 @@ td {
 }
 
 .room-card-info span {
-  font-size: 7px;
-  color: #a0a7b2;
+  font-size: 11px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #64748b;
+  letter-spacing: 0.5px;
 }
 
 .room-card-info strong {
-  font-size: 9px;
-  color: #4a5565;
+  font-size: 15px;
+  font-weight: 700;
+  color: #1e293b;
 }
 
 .room-card-bottom {
@@ -1402,8 +1421,8 @@ td {
 }
 
 .mini-avatar {
-  width: 22px;
-  height: 22px;
+  width: 26px;
+  height: 26px;
   flex-shrink: 0;
   border-radius: 50%;
   background: #eee8dc;
@@ -1411,26 +1430,27 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 8px;
+  font-size: 11px;
   font-weight: bold;
 }
 
 .room-current-guest span {
-  color: #596477;
-  font-size: 8px;
+  color: #334155;
+  font-size: 13px;
+  font-weight: 500;
   overflow: hidden;
   white-space: nowrap;
   text-overflow: ellipsis;
 }
 
 .no-guest {
-  color: #a2a9b4;
-  font-size: 8px;
+  color: #94a3b8;
+  font-size: 13px;
 }
 
 .room-arrow {
-  color: #b2b8c2;
-  font-size: 13px;
+  color: #94a3b8;
+  font-size: 16px;
 }
 
 /* EMPTY */
@@ -1654,9 +1674,10 @@ td {
 
 .reservation-summary-card span {
   display: block;
-  color: #8b94a2;
-  font-size: 9px;
+  color: #64748b;
+  font-size: 13px;
   margin-bottom: 7px;
+  font-weight: 500;
 }
 
 .reservation-summary-card strong {
@@ -1683,10 +1704,11 @@ td {
 .reservation-filter {
   border: none;
   background: transparent;
-  color: #7d8795;
-  padding: 8px 10px;
+  color: #64748b;
+  padding: 8px 14px;
   border-radius: 6px;
-  font-size: 9px;
+  font-size: 13px;
+  font-weight: 500;
   cursor: pointer;
 }
 
@@ -1719,7 +1741,8 @@ td {
   width: 100%;
   border: none;
   outline: none;
-  font-size: 9px;
+  font-size: 13px;
+  color: #1e293b;
 }
 
 .reservation-table-panel {
@@ -1745,29 +1768,30 @@ td {
 
 .booking-id {
   color: #9a7435;
-  font-size: 9px;
+  font-size: 13px;
+  font-weight: 600;
 }
 
 .guest-cell small {
   display: block;
-  color: #a0a7b2;
-  font-size: 7px;
+  color: #64748b;
+  font-size: 12px;
   margin-top: 3px;
 }
 
 .table-subtext {
   display: block;
-  color: #9ca3af;
-  font-size: 7px;
+  color: #64748b;
+  font-size: 12px;
   margin-top: 3px;
 }
 
 .reservation-status {
   display: inline-block;
-  padding: 5px 8px;
+  padding: 5px 10px;
   border-radius: 20px;
-  font-size: 7px;
-  font-weight: bold;
+  font-size: 12px;
+  font-weight: 600;
 }
 
 .reservation-status.confirmed {
@@ -3102,10 +3126,9 @@ td {
 }
 
 .restaurant-page .module-header p:last-child {
-  color: #8a94a3;
-  font-size: 11px;
+  color: #64748b;
+  font-size: 14px;
   margin-top: 5px;
-  line-height: 1.5;
 }
 
 /* =========================================================
@@ -3297,9 +3320,9 @@ td {
 }
 
 .popular-item-number {
-  color: #b0b6bf;
-  font-size: 9px;
-  font-weight: bold;
+  color: #94a3b8;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .popular-item-info {
@@ -3308,8 +3331,9 @@ td {
 
 .popular-item-info strong {
   display: block;
-  color: #374151;
-  font-size: 9px;
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 600;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -3317,8 +3341,8 @@ td {
 
 .popular-item-info span {
   display: block;
-  color: #9ca3af;
-  font-size: 7px;
+  color: #64748b;
+  font-size: 12px;
   margin-top: 3px;
 }
 
@@ -3328,21 +3352,23 @@ td {
 
 .popular-item-orders strong {
   display: block;
-  color: #374151;
-  font-size: 9px;
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .popular-item-orders span {
   display: block;
-  color: #a0a7b2;
-  font-size: 6px;
+  color: #94a3b8;
+  font-size: 11px;
+  text-transform: uppercase;
   margin-top: 2px;
 }
 
 .popular-item-price {
-  color: #9a7435;
-  font-size: 9px;
-  font-weight: bold;
+  color: #b45309;
+  font-size: 15px;
+  font-weight: 700;
   white-space: nowrap;
 }
 
@@ -4179,13 +4205,42 @@ td {
 .dashboard-welcome p:last-child { font-size: 16px !important; }
 .primary-button { font-size: 14px !important; padding: 12px 20px !important; }
 .stat-value { font-size: 32px !important; }
-.stat-title { font-size: 16px !important; }
-.stat-subtitle { font-size: 14px !important; }
-.panel-header h3 { font-size: 18px !important; }
-.panel-header p { font-size: 14px !important; }
+.stat-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #475569;
+  margin-top: 4px;
+}
+.stat-subtitle {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 5px;
+}
+.panel-header h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1e293b;
+}
+.panel-header p {
+  font-size: 13px;
+  color: #64748b;
+  margin-top: 4px;
+}
 .room-number { font-size: 20px !important; }
-.room-type { font-size: 14px !important; }
-.room-guest { font-size: 14px !important; }
+.room-type {
+  font-size: 12px;
+  color: #64748b;
+  margin-top: 3px;
+}
+.room-guest {
+  font-size: 13px;
+  color: #334155;
+  font-weight: 500;
+  margin-top: 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 table th { font-size: 14px !important; }
 table td { font-size: 14px !important; }
 .badge { font-size: 12px !important; }
