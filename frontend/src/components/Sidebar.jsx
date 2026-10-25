@@ -1,9 +1,12 @@
-function Sidebar({ activePage, setActivePage, onLogout }) {
+function Sidebar({ activePage, setActivePage, onLogout, user }) {
+  const isStaff = user?.role === "STAFF";
+
   const menuItems = [
     { name: "Dashboard", icon: "⌂" },
     { name: "Rooms", icon: "▣" },
     { name: "Reservations", icon: "▤" },
     { name: "Restaurant", icon: "♨" },
+    { name: "Smart Dining", icon: "🍽️" },
     { name: "Kitchen", icon: "🔪" },
     { name: "Housekeeping", icon: "🧹" },
     { name: "Maintenance", icon: "🔧" },
@@ -30,7 +33,22 @@ function Sidebar({ activePage, setActivePage, onLogout }) {
 
         <div>
           <h2>SAROVAR</h2>
-          <p>HOTEL • BOISAR</p>
+          <div style={{ display: 'flex', alignItems: 'center', gap: '6px' }}>
+            <p style={{ margin: 0 }}>HOTEL • BOISAR</p>
+            <span 
+              style={{
+                fontSize: '10px',
+                padding: '1px 6px',
+                borderRadius: '4px',
+                fontWeight: '700',
+                background: isStaff ? '#dcfce7' : '#dbeafe',
+                color: isStaff ? '#15803d' : '#1e40af',
+                letterSpacing: '0.04em'
+              }}
+            >
+              {isStaff ? 'STAFF' : 'ADMIN'}
+            </span>
+          </div>
         </div>
 
       </div>
@@ -65,6 +83,12 @@ function Sidebar({ activePage, setActivePage, onLogout }) {
               <span>
                 {item.name}
               </span>
+
+              {item.name === "Smart Dining" && (
+                <span className="ai-badge" style={{ background: '#f0fdf4', color: '#16a34a', borderColor: '#bbf7d0' }}>
+                  NEW
+                </span>
+              )}
 
             </button>
 
@@ -111,6 +135,12 @@ function Sidebar({ activePage, setActivePage, onLogout }) {
                 </span>
               )}
 
+              {item.name === "Security" && isStaff && (
+                <span style={{ fontSize: '10px', color: '#94a3b8', marginLeft: 'auto' }}>
+                  🔒 Admin
+                </span>
+              )}
+
             </button>
 
           ))}
@@ -129,8 +159,8 @@ function Sidebar({ activePage, setActivePage, onLogout }) {
           <span className="status-dot"></span>
 
           <div>
-            <strong>System Online</strong>
-            <small>All services operational</small>
+            <strong>{isStaff ? "Staff Session" : "Admin Session"}</strong>
+            <small>{isStaff ? "Operations Mode" : "Full Access Mode"}</small>
           </div>
 
         </div>
@@ -140,7 +170,7 @@ function Sidebar({ activePage, setActivePage, onLogout }) {
           onClick={onLogout}
         >
           <span>↪</span>
-          Sign Out
+          Sign Out ({user?.role || "ADMIN"})
         </button>
 
       </div>

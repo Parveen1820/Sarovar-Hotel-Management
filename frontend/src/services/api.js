@@ -59,3 +59,8 @@ export const updateHousekeepingRoomStatus = (room, status) => apiPut(`/housekeep
 // Maintenance
 export const getMaintenanceRequests = () => apiGet('/maintenance/requests');
 export const updateMaintenanceRequestStatus = (id, status) => apiPut(`/maintenance/requests/${id}/status`, { status });
+
+// Smart Dining
+export const getSmartDiningRecommendations = (criteria) => apiPost('/dining/recommend', criteria);
+export const getDiningMenuItems = () => apiGet('/dining/menu');
+

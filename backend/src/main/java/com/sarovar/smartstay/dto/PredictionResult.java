@@ -17,4 +17,12 @@ public class PredictionResult {
     private String recommendation;
     private String predictionDate;
     private String predictionHorizon;
+    
+    // Transparent forecasting indicators
+    private String method;
+    private String uncertaintyRange;
+    private String historicalComparison;
+    private String validationMetric;
+    private Integer dataPointsEvaluated;
+    private Boolean isDataSufficient = true;
 }
